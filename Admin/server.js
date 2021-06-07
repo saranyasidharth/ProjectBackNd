@@ -22,9 +22,6 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(cors());
 app.use('/', [authRoutes,employeeRoutes,studentRoutes]);
-
-//Swagger Config
-// Extended: https://swagger.io/specification/#infoObject
 const swaggerOptions = {
     swaggerDefinition: {
       info: {

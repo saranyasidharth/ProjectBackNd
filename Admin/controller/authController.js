@@ -8,7 +8,7 @@ const handleErrors=(err)=>{
 
     //incorrect email
     if(err.message === 'Incorrect email'){
-        error.email ="Entered email is not registered";
+        error.email ="Entered admin id is not registered";
     }
 
     //incorrect password

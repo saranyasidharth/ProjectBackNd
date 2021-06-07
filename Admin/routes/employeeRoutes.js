@@ -6,20 +6,6 @@ const bodyParser = require('body-parser');
 
 const router = Router();
 const urlencodedparser = bodyParser.urlencoded({extended: true});
-
-
-/**
- * @swagger
- * /employees:
- *  get:
- *    tags: ['employees']
- *    description: get all employees
- *    responses:
- *      '201':
- *        description: A successful response
- *      '400':
- *        description: Error occured
- */
 router.get('/employees', requireAuth, employeeController.get_all_employees);
 
 /**

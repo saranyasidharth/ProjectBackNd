@@ -40,7 +40,7 @@ const profileSchema = new mongoose.Schema({
             required: [true, "Please enter a zipcode"]
         }
     },
-    noOfWashes:{
+    noOfemp:{
         type:Number,
         default: 0
     }
